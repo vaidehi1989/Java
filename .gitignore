@@ -1,5 +1,9 @@
-
+.gitignore
 .git
 Examples/.metadata
 Examples/.recommenders
+Examples/RemoteSystemsTempFiles
+
+.metadata
+.recommenders
 RemoteSystemsTempFiles
