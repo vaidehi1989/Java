@@ -1,0 +1,1272 @@
+!SESSION 2018-11-21 11:48:22.289 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data D:\Teaching material\Java\CDAC\Demos\Examples -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jpt.dbws.eclipselink.core.gen 4 0 2018-11-21 11:48:23.426
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.dbws.eclipselink.core.gen [414]
+  Unresolved requirement: Require-Bundle: org.eclipse.persistence.dbws.builder; bundle-version="[2.3.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.persistence.dbws.builder; bundle-version="2.6.0.v20140809-296a69f"
+       org.eclipse.persistence.dbws.builder [681]
+         Unresolved requirement: Import-Package: org.eclipse.persistence.dbws; version="2.6.0"
+           -> Export-Package: org.eclipse.persistence.dbws; bundle-symbolic-name="org.eclipse.persistence.dbws"; bundle-version="2.6.0.v20140809-296a69f"; version="2.6.0"
+              org.eclipse.persistence.dbws [680]
+                Unresolved requirement: Import-Package: javax.ws.rs.ext; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.persistence.jpa; bundle-version="2.6.0"
+                  -> Bundle-SymbolicName: org.eclipse.persistence.jpa; bundle-version="2.6.0.v20140809-296a69f"
+                     org.eclipse.persistence.jpa [682]
+                       Unresolved requirement: Import-Package: javax.persistence; jpa="2.1"; version="[1.1.0,2.2.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.dbws.eclipselink.ui 4 0 2018-11-21 11:48:23.458
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.dbws.eclipselink.ui [415]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.dbws.eclipselink.core.gen; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.dbws.eclipselink.core.gen; bundle-version="1.1.100.v201308132122"; singleton:="true"
+       org.eclipse.jpt.dbws.eclipselink.core.gen [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.persistence.dbws.builder; bundle-version="[2.3.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.persistence.dbws.builder; bundle-version="2.6.0.v20140809-296a69f"
+              org.eclipse.persistence.dbws.builder [681]
+                Unresolved requirement: Import-Package: org.eclipse.persistence.dbws; version="2.6.0"
+                  -> Export-Package: org.eclipse.persistence.dbws; bundle-symbolic-name="org.eclipse.persistence.dbws"; bundle-version="2.6.0.v20140809-296a69f"; version="2.6.0"
+                     org.eclipse.persistence.dbws [680]
+                       Unresolved requirement: Import-Package: javax.ws.rs.ext; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.persistence.jpa; bundle-version="2.6.0"
+                         -> Bundle-SymbolicName: org.eclipse.persistence.jpa; bundle-version="2.6.0.v20140809-296a69f"
+                            org.eclipse.persistence.jpa [682]
+                              Unresolved requirement: Import-Package: javax.persistence; jpa="2.1"; version="[1.1.0,2.2.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.aop.core 4 0 2018-11-21 11:48:23.758
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.aop.core [976]
+  Unresolved requirement: Import-Package: org.aopalliance.aop
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.aop.ui 4 0 2018-11-21 11:48:23.763
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.aop.ui [977]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.aop.core
+    -> Export-Package: org.springframework.ide.eclipse.aop.core; bundle-symbolic-name="org.springframework.ide.eclipse.aop.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.aop.core [976]
+         Unresolved requirement: Import-Package: org.aopalliance.aop
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.aop.ui.matcher 4 0 2018-11-21 11:48:23.767
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.aop.ui.matcher [978]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.aop.core.internal.model
+    -> Export-Package: org.springframework.ide.eclipse.aop.core.internal.model; bundle-symbolic-name="org.springframework.ide.eclipse.aop.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.aop.core [976]
+         Unresolved requirement: Import-Package: org.aopalliance.aop
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.batch 4 0 2018-11-21 11:48:23.774
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.batch [979]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core.model
+    -> Export-Package: org.springframework.ide.eclipse.beans.core.model; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 4 0 2018-11-21 11:48:23.781
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.core [980]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+    -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.core [1004]
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.core.autowire 4 0 2018-11-21 11:48:23.795
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.core.autowire [981]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.core.metadata 4 0 2018-11-21 11:48:23.805
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.core.metadata [982]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui 4 0 2018-11-21 11:48:23.807
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui [983]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.autowire 4 0 2018-11-21 11:48:23.811
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.autowire [984]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core.autowire
+    -> Export-Package: org.springframework.ide.eclipse.beans.core.autowire; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core.autowire"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core.autowire [981]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+           -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.beans.core [980]
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+                  -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+                     org.springframework.ide.eclipse.core [1004]
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.editor 4 0 2018-11-21 11:48:23.819
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.editor [985]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.graph 4 0 2018-11-21 11:48:23.824
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.graph [986]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.livegraph 4 0 2018-11-21 11:48:23.828
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.livegraph [987]
+  Unresolved requirement: Require-Bundle: org.eclipse.zest.core; bundle-version="[1.0.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.refactoring 4 0 2018-11-21 11:48:23.833
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.refactoring [988]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.search 4 0 2018-11-21 11:48:23.839
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.search [989]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.bestpractices 4 0 2018-11-21 11:48:23.843
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.bestpractices [990]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.beans.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.beans.core; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot 4 0 2018-11-21 11:48:23.847
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot [991]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.frameworks.ui [1057]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [1060]
+                Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2018-11-21 11:48:23.851
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [992]
+  Unresolved requirement: Import-Package: org.springframework.web.client
+    -> Export-Package: org.springframework.web.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.2.3.20151116-RELEASE"; version="4.2.3.20151116-RELEASE"; uses:="org.apache.commons.logging,org.springframework.core,org.springframework.core.task,org.springframework.http,org.springframework.http.client,org.springframework.http.client.support,org.springframework.util.concurrent,org.springframework.web.util"
+       org.springframework.web [1049]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot.launch 4 0 2018-11-21 11:48:23.855
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.launch [993]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.boot [991]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+              org.springsource.ide.eclipse.commons.frameworks.ui [1057]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+                     org.springsource.ide.eclipse.commons.ui [1060]
+                       Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor 4 0 2018-11-21 11:48:23.860
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.properties.editor [994]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.maven; resolution:="optional"
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.maven; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.maven [1011]
+         Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.ui
+           -> Bundle-SymbolicName: org.springframework.ide.eclipse.ui; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+              org.springframework.ide.eclipse.ui [1015]
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+                  -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+                     org.springframework.ide.eclipse.core [1004]
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.aspectj.runtime
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.frameworks.ui [1057]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [1060]
+                Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot.properties.editor.yaml 4 0 2018-11-21 11:48:23.866
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.properties.editor.yaml [995]
+  Unresolved requirement: Require-Bundle: org.yaml.snakeyaml
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.boot.wizard 4 0 2018-11-21 11:48:23.872
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.wizard [997]
+  Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.0.20160611-RELEASE"; version="4.3.0.20160611-RELEASE"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+       org.springframework.web [1026]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.buildship 4 0 2018-11-21 11:48:23.900
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.buildship [998]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot.wizard
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot.wizard; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.boot.wizard [997]
+         Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.0.20160611-RELEASE"; version="4.3.0.20160611-RELEASE"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+              org.springframework.web [1026]
+                Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+                Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.buildship20 4 0 2018-11-21 11:48:23.909
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.buildship20 [999]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot.wizard
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot.wizard; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.boot.wizard [997]
+         Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.0.20160611-RELEASE"; version="4.3.0.20160611-RELEASE"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+              org.springframework.web [1026]
+                Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+                Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.cloudfoundry.manifest.editor 4 0 2018-11-21 11:48:23.914
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.cloudfoundry.manifest.editor [1000]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.editor.support
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.editor.support; bundle-version="3.8.4.201703310634-RELEASE"
+       org.springframework.ide.eclipse.editor.support [1007]
+         Unresolved requirement: Require-Bundle: org.yaml.snakeyaml
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.config.core 4 0 2018-11-21 11:48:23.921
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.core [1001]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.beans.ui
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.beans.ui; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.beans.ui [983]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+           -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.beans.core [980]
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+                  -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+                     org.springframework.ide.eclipse.core [1004]
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.config.graph 4 0 2018-11-21 11:48:23.923
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.graph [1002]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.beans.ui.editor
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.beans.ui.editor; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.beans.ui.editor [985]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+           -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.beans.core [980]
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+                  -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+                     org.springframework.ide.eclipse.core [1004]
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.config.ui 4 0 2018-11-21 11:48:23.929
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.ui [1003]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.beans.core; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.beans.core; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.core 4 0 2018-11-21 11:48:23.933
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.core [1004]
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.data.core 4 0 2018-11-21 11:48:23.938
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.data.core [1005]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.core; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.core [1004]
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.editor.support 4 0 2018-11-21 11:48:23.941
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.editor.support [1007]
+  Unresolved requirement: Require-Bundle: org.yaml.snakeyaml
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.gradle 4 0 2018-11-21 11:48:23.947
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.gradle [1008]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.core
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.core; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.core [1004]
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.integration 4 0 2018-11-21 11:48:23.953
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.integration [1010]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core.model
+    -> Export-Package: org.springframework.ide.eclipse.beans.core.model; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.maven 4 0 2018-11-21 11:48:23.958
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.maven [1011]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.ui
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.ui; bundle-version="3.8.4.201703310634-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.ui [1015]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.metadata 4 0 2018-11-21 11:48:23.961
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.metadata [1012]
+  Unresolved requirement: Import-Package: org.aspectj.lang.annotation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.quickfix 4 0 2018-11-21 11:48:23.965
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.quickfix [1013]
+  Unresolved requirement: Require-Bundle: org.springframework.web
+    -> Bundle-SymbolicName: org.springframework.web; bundle-version="4.3.0.20160611-RELEASE"
+       org.springframework.web [1026]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.security 4 0 2018-11-21 11:48:23.969
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.security [1014]
+  Unresolved requirement: Import-Package: org.aopalliance.aop; version="[1.0.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.ui 4 0 2018-11-21 11:48:23.976
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.ui [1015]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+    -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.core [1004]
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.webflow.core 4 0 2018-11-21 11:48:23.981
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.core [1016]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui 4 0 2018-11-21 11:48:23.987
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui [1017]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core
+    -> Export-Package: org.springframework.ide.eclipse.beans.core; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.editor 4 0 2018-11-21 11:48:23.993
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.editor [1018]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core.internal.model
+    -> Export-Package: org.springframework.ide.eclipse.beans.core.internal.model; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.graph 4 0 2018-11-21 11:48:23.998
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.graph [1019]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.beans.core.internal.model
+    -> Export-Package: org.springframework.ide.eclipse.beans.core.internal.model; bundle-symbolic-name="org.springframework.ide.eclipse.beans.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.beans.core [980]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.core
+           -> Export-Package: org.springframework.ide.eclipse.core; bundle-symbolic-name="org.springframework.ide.eclipse.core"; bundle-version="3.8.4.201703310634-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.core [1004]
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.javaelements; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.ajdt.core.model; resolution:="optional"
+                Unresolved requirement: Import-Package: org.eclipse.contribution.jdt; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.aspectj.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springframework.ide.eclipse.wizard 4 0 2018-11-21 11:48:24.003
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.wizard [1020]
+  Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.0.20160611-RELEASE"; version="4.3.0.20160611-RELEASE"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+       org.springframework.web [1026]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.net.httpserver; version="0.0.0"; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.validation
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.configurator 4 0 2018-11-21 11:48:24.010
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.configurator [1053]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [1060]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.ui 4 0 2018-11-21 11:48:24.013
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.frameworks.ui [1057]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="3.7.2.201511260840-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [1060]
+         Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.ui 4 0 2018-11-21 11:48:24.016
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.ui [1060]
+  Unresolved requirement: Require-Bundle: org.json; bundle-version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-11-21 11:48:33.171
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sia'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:33.913
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY org.eclipse.osgi 2 0 2018-11-21 11:48:40.195
+!MESSAGE While loading class "com.amazonaws.eclipse.core.AwsToolkitCore", thread "Thread[Worker-15,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.amazonaws.eclipse.core_2.3.1.v201708161930 [925]". To avoid deadlock, thread "Thread[Worker-15,5,main]" is proceeding but "com.amazonaws.eclipse.core.AwsToolkitCore" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.amazonaws.eclipse.core"; type="osgi.bundle"; version:Version="2.3.1.v201708161930"; singleton:="true" [id=925] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.amazonaws.eclipse.ec2.keypairs.KeyPairManager.convertLegacyPrivateKeyFiles(KeyPairManager.java:242)
+	at com.amazonaws.eclipse.ec2.Ec2Plugin$2.run(Ec2Plugin.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:46.687
+!MESSAGE No profile found: default
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:46.721
+!MESSAGE Monitoring content of C:\Users\Sia\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:46.811
+!MESSAGE AWS toolkit core plugin initialized after 12898 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:46.817
+!MESSAGE The current accountId is not found in the system. Switching to the default account.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2018-11-21 11:48:50.602
+!MESSAGE Initialized a new Cognito identity us-east-1:3a19eb64-8e89-4590-9803-4a8d1092be10
