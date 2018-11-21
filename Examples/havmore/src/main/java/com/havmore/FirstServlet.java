@@ -28,5 +28,14 @@ public class FirstServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.getWriter().append("Welcome to Servlet Technology");
+		response.getWriter().append("This is doGet method");
+
 	}
+
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.getWriter().append("This is doPost method");
+	}
+
 }
