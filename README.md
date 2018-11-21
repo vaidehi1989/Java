@@ -6,7 +6,7 @@ To Clone the repository :
 
 1. Download git https://git-scm.com/download/win 
 2. Open Command Prompt and navigate to desired folder path.
-3. Type command : <b>git clone https://github.com/vaidehi1989/CDAC_TICA_May_2018.git</b>
+3. Type command : <b>git clone https://github.com/vaidehi1989/Java.git</b>
 4. To update your git folder with updated versions use command : 
   <b>git pull</b>
   
