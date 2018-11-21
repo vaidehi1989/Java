@@ -2,7 +2,7 @@
 Demo code for lab examples
 
 
-To Clone the repository :
+<b>To Clone the repository :</b>
 
 1. Download git https://git-scm.com/download/win 
 2. Open Command Prompt and navigate to desired folder path.
@@ -11,7 +11,7 @@ To Clone the repository :
   <b>git pull</b>
   
   
-  If port 8080 is already in use :
+  <b>If port 8080 is already in use :</b>
   1. open command prompt in administrator mode
   2. run command :
      netstat - ano | findstr "8080"
