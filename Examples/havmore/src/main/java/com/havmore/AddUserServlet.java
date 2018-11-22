@@ -20,18 +20,19 @@ public class AddUserServlet extends HttpServlet {
 		String category = request.getParameter("category");
 		String username = request.getParameter("userName");
 		String password = request.getParameter("password");
-		
+
 		Statement stmt = DbConnection.getDBConnection();
-		
+
 		try {
-			stmt.executeUpdate("Insert into user values ('"+name+"','"+username+"','"+password+"','"+category+"')");
-			response.getWriter().append("<h3>User added successfully</h3>");
+			stmt.executeUpdate("Insert into user values ('" + name + "','" + username + "','" + password + "','"
+					+ category + "')");
+			// response.getWriter().append("<h3>User added successfully</h3>");
+			response.sendRedirect("homepage.html");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			response.getWriter().append("<h3>Error in adding a user!!</h3>");
+			// response.getWriter().append("<h3>Error in adding a user!!</h3>");
+			response.sendRedirect("Login.html");
 		}
-		
-		
 
 	}
 

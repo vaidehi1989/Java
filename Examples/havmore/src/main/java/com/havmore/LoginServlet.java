@@ -5,6 +5,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +20,15 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
+		ServletConfig config = getServletConfig();
+		String s = config.getInitParameter("email");
+		
+		ServletContext context = getServletContext();
+		context.getInitParameter("");
+		
+		
+		response.setContentType("text/html");
 		String userid = request.getParameter("userName");
 		String password = request.getParameter("password");
 
@@ -27,14 +38,18 @@ public class LoginServlet extends HttpServlet {
 			rs.next();
 			if (rs.getString("password").equals(password)) {
 				response.getWriter().append("Welcome " + rs.getString("name"));
+				// response.sendRedirect("homepage.html");
 			} else {
-				response.getWriter().append("Invalid credentials");
+				response.getWriter().append("<h5 style = 'color:red;'>Invalid credentials<h5>");
+				RequestDispatcher rd = request.getRequestDispatcher("Login.html");
+				rd.include(request, response);
 			}
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			response.getWriter().append("Invalid credentials");
+			response.sendRedirect("Login.html");
 		}
 
 	}
