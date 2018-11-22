@@ -41,4 +41,14 @@
     <servlet-name>Servlet2</servlet-name>
     <url-pattern>/Servlet2</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListProductsServlet</display-name>
+    <servlet-name>ListProductsServlet</servlet-name>
+    <servlet-class>com.havmore.ListProductsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListProductsServlet</servlet-name>
+    <url-pattern>/ListProductsServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
