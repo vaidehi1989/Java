@@ -1,4 +1,4 @@
-
+<%@page import="com.havmore.model.User"%>
 <%@page import="com.havmore.model.Icecream"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -7,35 +7,130 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Havmor - Products</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-	<h1>Our Products</h1>
+	<jsp:include page="header.jsp"></jsp:include>
+	<jsp:include page="/ListProductsServlet"></jsp:include> 
 	<%
-		List<Icecream> icecreams = (List) request.getAttribute("icecreamList");
+		List<Icecream> products = (List) request.getAttribute("icecreamList");
 	%>
-	<table border="1px">
-		<tr>
-			<td>Name</td>
-			<td>Category</td>
-			<td>Price</td>
-		</tr>
-		<%
-			for (Icecream icecream : icecreams) {
-		%>
-		<tr>
-			<td><%=icecream.getName()%></td>
-			<td><%=icecream.getCategory()%></td>
-			<td><%=icecream.getPrice()%></td>
+	<div class="container">
+		<div class="row">
+			<%
+				User user = (User) session.getAttribute("user");
+				if (user != null) {
+					if (user.getType().equals("customer")) {
+			%>
+			<button type="button" class="btn-sm btn-primary" data-toggle="modal"
+				data-target="#PlaceOrder">Place your Order</button>
 
-		</tr>
-		<%
-			}
-		%>
+			<%
+				} else {
+			%>
+			<button type="button" class="btn-sm btn-primary" data-toggle="modal"
+				data-target="#AddInventory">Add Product</button>
 
-	</table>
+			<%
+				}
+				}
+			%>
 
+		</div>
+		<br>
+		<div class="row">
 
+			<div class="card bg-success text-white" style="width: 350px;">
 
+				<div class="card-header" align="center">Candies</div>
+				<div class="card-body" align="center">
+					<img src="images/almond-chocobar.png" />
+				</div>
+				<div class="card-footer">
+					<table class="table table-borderless">
+						<tbody>
+							<%
+								for (Icecream ic : products) {
+									if (ic.getCategory().equals("candy")) {
+							%>
+							<tr class="">
+								<td><%=ic.getName()%></td>
+								<td><%=ic.getPrice()%></td>
+							</tr>
+							<%
+								}
+								}
+							%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<br>
+			<div class="card bg-info text-white" style="width: 350px;">
+				<div class="card-header" align="center">Cups</div>
+				<div class="card-body" align="center">
+					<img src="images/Rasmalai-90-ml-cup_01.png" />
+				</div>
+				<div class="card-footer">
+					<table class="table table-borderless">
+						<tbody>
+							<%
+								for (Icecream ic : products) {
+									if (ic.getCategory().equals("cups")) {
+							%>
+							<tr class="">
+								<td><%=ic.getName()%></td>
+								<td><%=ic.getPrice()%></td>
+							</tr>
+
+							<%
+								}
+								}
+							%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<br>
+			<div class="card bg-warning text-white" style="width: 350px;">
+				<div class="card-header" align="center">Combo Packs</div>
+				<div class="card-body" align="center">
+					<img src="images/golden-pearl.png" />
+				</div>
+				<div class="card-footer">
+					<table class="table table-borderless">
+						<tbody>
+							<%
+								for (Icecream ic : products) {
+									if (ic.getCategory().equals("combopacks")) {
+							%>
+							<tr class="">
+								<td><%=ic.getName()%></td>
+								<td><%=ic.getPrice()%></td>
+							</tr>
+							<%
+								}
+								}
+							%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<br>
+
+		</div>
+	</div>
+	<jsp:include page="addProduct.jsp"></jsp:include>
+	<%--<jsp:include page="placeorder.jsp"></jsp:include>
+	<jsp:include page="footer.jsp"></jsp:include> --%>
 </body>
 </html>

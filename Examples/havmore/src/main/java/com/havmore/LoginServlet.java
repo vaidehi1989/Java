@@ -12,30 +12,34 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.havmore.model.DbConnection;
+import com.havmore.model.User;
 
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		response.setContentType("text/html");
 		String userid = request.getParameter("userName");
 		String password = request.getParameter("password");
+		HttpSession session = request.getSession();
 
 		Statement stmt = DbConnection.getDBConnection();
 		try {
 			ResultSet rs = stmt.executeQuery("select * from user where userName = '" + userid + "'");
-			rs.next();
-			if (rs.getString("password").equals(password)) {
-				response.getWriter().append("Welcome " + rs.getString("name"));
-				// response.sendRedirect("homepage.html");
+			if (rs.next()) {
+				User user = new User(rs.getString("name"), rs.getString("userName"), rs.getString("password"),
+						rs.getString("type"));
+				if (user.getUserName().equals(userid) && user.getPassword().equals(password)) {
+					session.setAttribute("user", user);
+					response.sendRedirect("index.jsp");
+				}
 			} else {
-				response.getWriter().append("<h5 style = 'color:red;'>Invalid credentials<h5>");
-				RequestDispatcher rd = request.getRequestDispatcher("Login.html");
-				rd.include(request, response);
+				response.sendRedirect("login.jsp");
 			}
 
 		} catch (SQLException e) {

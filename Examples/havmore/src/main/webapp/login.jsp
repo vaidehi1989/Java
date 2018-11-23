@@ -12,46 +12,12 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<style>
-/* Make the image fully responsive */
-.carousel-inner img {
-	width: 100%;
-	height: 100%;
-}
-</style>
-
-<style>
-.footer {
-	position: relative;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: red;
-	color: white;
-	text-align: center;
-}
-</style>
-
 </head>
 <body>
-	<!-- <jsp:include page="header.jsp"></jsp:include> -->
-
-	<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
-		<div class="navbar-nav mr-auto">
-			<ul class="navbar-nav" style="padding-left: 120px">
-				<li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="viewproducts.jsp">Products</a></li>
-				<li class="nav-item ml-auto"><a class="nav-link"
-					href="Login.html">Login</a></li>
-			</ul>
-		</div>
-		<a href="index.html"
-			style="left: 1050px; height: 80px; visibility: visible; position: fixed; z-index: 100;"><img
-			src="images/havmor-logo.png" /></a>
-	</nav>
-
-
+	<%
+		session.invalidate();
+	%>
+	<jsp:include page="header.jsp"></jsp:include>
 	<div class="container">
 		<div class="row sm-40" style="margin: auto; max-width: 300px;">
 			<div class="card bg-light text-dark">
@@ -68,12 +34,13 @@
 						</div>
 						<button type="submit" class="btn btn-success">LOGIN</button>
 						<div class="form-group">
-							<label>Not a member yet? <a href="adduser.html">Sign
+							<label>Not a member yet? <a href="adduser.jsp">Sign
 									up!</a></label>
 						</div>
 					</form>
 
 				</div>
+
 			</div>
 		</div>
 	</div>

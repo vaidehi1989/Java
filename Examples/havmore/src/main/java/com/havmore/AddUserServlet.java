@@ -10,28 +10,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.havmore.model.DbConnection;
+import com.havmore.model.User;
 
 public class AddUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String name = request.getParameter("name");
-		String category = request.getParameter("category");
-		String username = request.getParameter("userName");
-		String password = request.getParameter("password");
 
 		Statement stmt = DbConnection.getDBConnection();
+		User user = (User) request.getAttribute("user");
 
 		try {
-			stmt.executeUpdate("Insert into user values ('" + name + "','" + username + "','" + password + "','"
-					+ category + "')");
-			// response.getWriter().append("<h3>User added successfully</h3>");
-			response.sendRedirect("homepage.html");
+			stmt.executeUpdate("Insert into user values ('" + user.getName() + "','" + user.getUserName() + "','"
+					+ user.getPassword() + "','" + user.getType() + "')");
+			response.sendRedirect("index.jsp");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			// response.getWriter().append("<h3>Error in adding a user!!</h3>");
-			response.sendRedirect("Login.html");
+			response.sendRedirect("adduser.jsp");
 		}
 
 	}

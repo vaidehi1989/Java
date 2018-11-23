@@ -1,6 +1,10 @@
 package com.havmore.demo;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -15,19 +19,19 @@ public class Servlet1 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "12345");
+			Statement stmt = conn.createStatement();
+			stmt.executeUpdate("Insert into icecream values (null,'coconut', 'cup', 60)");
 
-//		request.setAttribute("name", 10);
-//		RequestDispatcher rd = request.getRequestDispatcher("Servlet2");
-//		rd.forward(request, response);
-		
-		HttpSession session = request.getSession();
-		session.setAttribute("name", 10);
-		response.sendRedirect("Servlet2");
-//		
-//		ServletContext context = getServletContext();
-//		context.setAttribute("name", "value");
-		
-		
+		} catch (ClassNotFoundException e) {
+			System.out.println("Class not found");
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("Error in sql syntax!!");
+		}
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Havmor - Add user</title>
+<title>Havmor - Login</title>
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -12,44 +12,9 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<style>
-/* Make the image fully responsive */
-.carousel-inner img {
-	width: 100%;
-	height: 100%;
-}
-</style>
-
-<style>
-.footer {
-	position: relative;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: red;
-	color: white;
-	text-align: center;
-}
-</style>
-
 </head>
 <body>
-	<!-- <jsp:include page="header.jsp"></jsp:include> -->
-
-	<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
-		<div class="navbar-nav mr-auto">
-			<ul class="navbar-nav" style="padding-left: 120px">
-				<li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="viewproducts.jsp">Products</a></li>
-				<li class="nav-item ml-auto"><a class="nav-link"
-					href="Login.html">Login</a></li>
-			</ul>
-		</div>
-		<a href="index.html"
-			style="left: 1050px; height: 80px; visibility: visible; position: fixed; z-index: 100;"><img
-			src="images/havmor-logo.png" /></a>
-	</nav>
+	<jsp:include page="header.jsp"></jsp:include>
 
 
 	<div class="container">
@@ -59,19 +24,18 @@
 				<div class="card bg-light text-dark">
 					<div class="card-header">Sign Up!!</div>
 					<div class="card-body">
-						<form action="AddUserServlet" method="post">
+						<form action="Add.jsp" method="post">
 							<div class="form-group">
 								<label for="name">Name:</label> <input type="text"
 									class="form-control" id="name" name="name">
 							</div>
 							<div class="form-group">
-								<label for="category">Category:</label>
+								<label for="type">Category:</label>
 								<div class="radio">
-									<label><input type="radio" name="category"
-										value="customer">Customer</label>
+									<label><input type="radio" name="type" value="customer">Customer</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="category"
+									<label><input type="radio" name="type"
 										value="shopkeeper">Shopkeeper</label>
 								</div>
 							</div>
@@ -85,14 +49,16 @@
 							</div>
 							<button type="submit" class="btn btn-success">ADD</button>
 							<div class="form-group">
-								<label>Already a member? <a href="Login.html">Login!</a></label>
+								<label>Already a member? <a href="login.jsp">Login!</a></label>
 							</div>
 						</form>
 					</div>
+
 				</div>
 			</div>
 
-
 		</div>
+
+	</div>
 </body>
 </html>
