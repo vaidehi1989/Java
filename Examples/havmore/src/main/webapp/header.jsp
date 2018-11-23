@@ -1,4 +1,12 @@
 <%@page import="com.havmore.model.User"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Havmor - <%=request.getParameter("title")%></title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -24,37 +32,32 @@
 	text-align: center;
 }
 </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
+		<div class="navbar-nav mr-auto">
+			<ul class="navbar-nav" style="padding-left: 120px">
+				<li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="listproducts.jsp">Products</a></li>
+				<%
+					User user = (User) session.getAttribute("user");
+					if (user != null) {
+				%>
+				<li class="nav-item"><a class="nav-link" href="login.jsp">Logout</a></li>
 
-<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
-	<div class="navbar-nav mr-auto">
-		<ul class="navbar-nav" style="padding-left: 120px">
-			<li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="">Products</a></li>
-			<%
-				User user = (User) session.getAttribute("user");
-				if (user != null) {
-					if (user.getType().equals("shopkeeper")) {
-			%>
+				<%
+					} else {
+				%>
+				<li class="nav-item ml-auto"><a class="nav-link"
+					href="login.jsp">Login</a></li>
+				<%
+					}
+				%>
 
-			<li class="nav-item"><a class="nav-link" href="">Add Product</a></li>
-			<%
-				}
-			%>
-			<li class="nav-item"><a class="nav-link" href="login.jsp">Logout</a></li>
-
-			<%
-				} else {
-			%>
-			<li class="nav-item ml-auto"><a class="nav-link"
-				href="login.jsp">Login</a></li>
-			<%
-				}
-			%>
-
-		</ul>
-	</div>
-	<a href="index.html"
-		style="left: 1050px; height: 80px; visibility: visible; position: fixed; z-index: 100;"><img
-		src="images/havmor-logo.png" /></a>
-</nav>
-
+			</ul>
+		</div>
+		<a href="index.html"
+			style="left: 1050px; height: 80px; visibility: visible; float: right; z-index: 100;"><img
+			src="images/havmor-logo.png" /></a>
+	</nav>

@@ -38,9 +38,7 @@ public class ListProductsServlet extends HttpServlet {
 		}
 
 		request.setAttribute("icecreamList", icecreams);
-		// RequestDispatcher rd =
-		// request.getRequestDispatcher("listproducts.jsp");
-		// rd.forward(request, response);
+		
 	}
 
 }
