@@ -45,8 +45,7 @@ public class LoginServlet extends HttpServlet {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			response.getWriter().append("Invalid credentials");
-			response.sendRedirect("Login.html");
+			response.sendRedirect("login.jsp");
 		}
 
 	}
