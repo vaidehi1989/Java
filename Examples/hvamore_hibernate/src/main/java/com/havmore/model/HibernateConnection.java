@@ -4,6 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import com.havmore.havmoreDao.UserDao;
+import com.havmore.havmoreDao.UserDaoImpl;
+
 public class HibernateConnection {
 
 	public static Session getSession() {
@@ -22,9 +25,10 @@ public class HibernateConnection {
 	
 
 	public static void main(String[] args) {
-		Session session = getSession();
-		
-		session.close();
+		Login login = new Login("janet", "1234");
+		UserDao dao = new UserDaoImpl();
+		User user = dao.login(login);
+		System.out.println(user);
 
 	}
 

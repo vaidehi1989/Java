@@ -1,6 +1,6 @@
 <jsp:useBean id="user" class="com.havmore.model.User" scope="request"></jsp:useBean>
 <jsp:setProperty property="*" name="user" />
-<jsp:forward page="AddUserServlet"></jsp:forward>
+<jsp:forward page="/AddUserServlet"></jsp:forward>
 
 
 
