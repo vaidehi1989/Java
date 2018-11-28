@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<body>
+
+	<h1>Add Cake</h1>
+
+	<h:outputLabel value="#{cake.msg}" style="color:red"></h:outputLabel>
+
+	<h:form>
+		<label>Name :</label>
+		<h:inputText value="#{cake.name}"></h:inputText>
+		<br />
+		<label>Price : </label>
+		<h:inputText value="#{cake.price}"></h:inputText>
+		<br />
+		<label>Quantity :</label>
+		<h:inputText value="#{cake.quantity}"></h:inputText>
+		<br />
+		<h:commandButton value="Add" action="#{cake.addCake}"></h:commandButton>
+	</h:form>
+
+
+
+
+
+
+</body>
+</html>
+
+
