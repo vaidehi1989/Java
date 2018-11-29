@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<!-- Configuring the Hibernate Conections -->
+
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Dialect : For connecting any hibernate application with the database, 
+			you must specify the SQL dialects. There are many Dialects classes defined 
+			for RDBMS in the org.hibernate.dialect package. -->
+
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>
+
+		<!-- The JDBC driver class. -->
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+
+		<!-- The JDBC URL to the database instance. Assume "mydb" is the database 
+			name -->
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/mydb
+		</property>
+
+		<!-- The database username. -->
+		<property name="hibernate.connection.username">
+			root
+		</property>
+
+		<!-- The database password. -->
+		<property name="hibernate.connection.password">
+			12345
+		</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- List of Persistent Objects -->
+
+		<mapping resource="icecream.hbm.xml" />
+		<mapping class="com.havmore.model.User" />
+		<mapping class="com.havmore.model.Coffee" />
+
+	</session-factory>
+</hibernate-configuration>

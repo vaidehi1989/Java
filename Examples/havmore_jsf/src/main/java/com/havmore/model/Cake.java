@@ -25,6 +25,7 @@ public class Cake implements Serializable {
 
 	@Column
 	private String quantity;
+	
 
 	public Cake() {
 		// TODO Auto-generated constructor stub

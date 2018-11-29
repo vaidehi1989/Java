@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="book" namespace="/" extends="struts-default">
+		<action name="insertbook" class="com.bookstore.controller.action.InsertBookAction">
+			<result name="success">/welcome.jsp</result>
+		</action>
+
+		<action name="insertbookpage" class="com.bookstore.controller.action.InsertBookAction"
+			method="newM">
+			<result name="success">/insertbook.jsp</result>
+		</action>
+		
+		<action name="/"
+			class="com.bookstore.controller.action.SearchBooksAction">
+			<result name="success">/index.jsp</result>
+		</action>
+
+		<action name="home"
+			class="com.bookstore.controller.action.SearchBooksAction">
+			<result name="success">/index.jsp</result>
+		</action>
+
+
+
+		<!-- Struts Wildcards -->
+		<action name="*books"
+		
+			class="com.bookstore.controller.action.SearchBooksAction" method="{1}">
+			<result name="success">/index.jsp</result>
+			<result name="correct">/OrderSuccess.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
+
+
+
+
+
+

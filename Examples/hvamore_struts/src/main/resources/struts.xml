@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="coffee" namespace="/" extends="struts-default">
+		<action name="insertcoffee" class="com.havmore.action.InsertCoffeeAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="listcoffees" class="com.havmore.action.ListCoffeesAction">
+			<result name="success">/listcoffees.jsp</result>
+		</action>
+
+		<!-- Struts Wildcards -->
+		<action name="*Coffees"
+			class="com.Coffeestore.controller.action.SearchCoffeesAction" method="{1}">
+			<result name="success">/index.jsp</result>
+			<result name="correct">/OrderSuccess.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
+
+
+
+
+
+
