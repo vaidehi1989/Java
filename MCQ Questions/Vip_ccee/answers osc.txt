@@ -1,0 +1,108 @@
+2.
+ LWP=light wait process
+ HRQ=
+ DMA
+ PCB
+ FAT
+
+3.1.d
+
+  2.b
+
+  3.d
+
+  4.a
+  
+  5.aDevice files are used to apply access rights and to direct operations on the files
+   to the appropriate device drivers.
+  6.a
+  7.c
+  8.d
+  9.d
+  10.
+  11.a
+  12.a spolling:Acronym forsimultaneous peripheral operations on- line, spooling 
+	refers to puttingjobs in ab u ff er, a special area inmemor y or on adisk where 
+	adevic e cana ccess them when it is ready. Spooling is useful because devices
+ 	accessdata at different rates. The buffer provides a waiting station where 
+	data can rest while the slower device catches up. 
+  13.c
+  14.e
+  15.a
+  16.a
+  17.a
+  18.b
+  19.
+  20.d
+  21.
+  22.b,d
+  23.c
+
+
+
+
+24.b.Job Control Language (JCL) is a scripting language used on IBM mainframe 
+operating systems to instruct the system on how 
+to run a batch job or start a subsystem
+
+25.c.It allows system software to utilize features such as virtual memory,
+paging, safe multi-tasking, and other features designed to
+increase an operating system's control over application software.
+
+26.d.In protected mode the segment_part is replaced by a 16 bit selector, the 13 upper bits (bit 3 to bit 15) of the selector contains the index of an entry inside a descriptor table. The lowest two bits define the privilege of the request, from 0 to 3 where 0 has the highest priority and 3 the lowest. The remainder bit specifies if the operation is against the GDT or a LDT.
+
+The descriptor table entry contains
+
+the real linear address of the segment
+a limit value for the segment size
+some attribute bits (flags)
+
+
+27.a
+28.d
+
+29.b.The first implementation of the P6 core was the Pentium Pro CPU in 1995
+
+30.Short for Extended Data Out Dynamic Random Access Memory, 
+a type of DRAM that is faster than conventional DRAM
+
+31.d
+32.d
+33.d
+34.a Terminate and Stay Resident (TSR) is a computer system call in DOS computer operating systems 
+that returns control to the system as if the program has quit, but keeps the program in memory
+35.
+There is a wide variety of technical performance metrics that indirectly affect overall computer performance.
+a).Instructions per second
+b).FLOPS
+c).Performance per watt
+
+36.b
+The Intel 80286[1] (also called iAPX 286), introduced on February 1, 1982, 
+was a 16-bit x86 microprocessor with 134,000 transistors. 
+
+37.b
+display the script name with echo $0 
+
+38.a
+
+39.c
+Aging is a technique of gradually increasing the priority of processes that wait in queue
+
+40.a
+
+41.a
+
+42.a
+43.a
+44.b
+45.
+46.a.Extended Industry Standard Architecture
+
+47.b
+48.b
+49.b
+
+
+
+

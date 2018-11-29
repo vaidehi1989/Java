@@ -6,35 +6,72 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- <bean id="Point" class="com.bookstore.demos.Point">
-		<constructor-arg type="int" value="5"></constructor-arg>
-		<property name="y" value="2"></property>
-	</bean>
-
-	<bean id="circle" class="com.bookstore.demos.Circle" autowire="byType">
-	</bean> -->
-
-	<bean id="vertexA" class="com.bookstore.demos.Point" scope="prototype">
+	<bean id="vertexA" class="com.bookstore.demos.inheritance.Point"
+		scope="prototype">
 		<constructor-arg type="int" value="0"></constructor-arg>
 		<property name="y" value="0"></property>
 	</bean>
-	<bean id="vertexB" class="com.bookstore.demos.Point" scope="prototype">
+	<bean id="vertexB" class="com.bookstore.demos.inheritance.Point"
+		scope="prototype">
 		<constructor-arg type="int" value="0"></constructor-arg>
 		<property name="y" value="4"></property>
 	</bean>
-	<bean id="vertexC" class="com.bookstore.demos.Point" scope="prototype">
+	<bean id="vertexC" class="com.bookstore.demos.inheritance.Point"
+		scope="prototype">
 		<constructor-arg type="int" value="4"></constructor-arg>
 		<property name="y" value="0"></property>
 	</bean>
 
-
-	<bean id="triangle" class="com.bookstore.demos.Triangle" autowire="constructor"
+	<bean id="vertexD" class="com.bookstore.demos.inheritance.Point"
 		scope="prototype">
-
+		<constructor-arg type="int" value="4"></constructor-arg>
+		<property name="y" value="4"></property>
 	</bean>
 
-	<!-- <bean id="triangle" class="com.bookstore.demos.Triangle"> <constructor-arg 
-		ref="vertexA"></constructor-arg> <constructor-arg ref="vertexB"></constructor-arg> 
+	<bean id="shape" class="com.bookstore.demos.inheritance.Shape"
+		abstract="true">
+		<property name="points">
+			<list>
+				<ref bean="vertexA" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="circle" class="com.bookstore.demos.inheritance.Circle"
+		parent="shape"></bean>
+
+	<bean id="triangle" class="com.bookstore.demos.inheritance.Triangle"
+		parent="shape">
+		<property name="points">
+			<list merge="true">
+				<ref bean="vertexB" />
+				<ref bean="vertexC" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="rectangle" class="com.bookstore.demos.inheritance.Rectangle"
+		parent="shape">
+		<property name="points">
+			<list merge="true">
+				<ref bean="vertexB" />
+				<ref bean="vertexC" />
+				<ref bean="vertexD" />
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- <bean id="Point" class="com.bookstore.demos.inheritancePoint"> <constructor-arg 
+		type="int" value="5"></constructor-arg> <property name="y" value="2"></property> 
+		</bean> <bean id="circle" class="com.bookstore.demos.inheritanceCircle" autowire="byType"> 
+		</bean> -->
+
+	<!-- <bean id="triangle" class="com.bookstore.demos.inheritanceTriangle" 
+		autowire="constructor" scope="prototype"> </bean> -->
+
+	<!-- <bean id="triangle" class="com.bookstore.demos.inheritanceTriangle"> 
+		<constructor-arg ref="vertexA"></constructor-arg> <constructor-arg ref="vertexB"></constructor-arg> 
 		<constructor-arg ref="vertexC"></constructor-arg> </bean> -->
 
 

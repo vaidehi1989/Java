@@ -1,0 +1,149 @@
+1) The operating system manages ________. 
+	1 Memory 
+	2 Processor 
+	3 Disk and I/O devices 
+	4 All of the above 
+Ans ) 4 
+
+2) It is not the layer of the Operating system. 
+	1 Kernel 
+	2 Shell 
+	3 Application program 
+	4 Critcal Section 
+Ans ) 4 
+
+3)What is the name of the software which deals with the running of the actual computer and 
+  not with the programming problems? 
+	1 Operating system 
+	2 System program 
+	3 Object program 
+	4 Source program 
+Ans ) 2
+
+4)System utilities are
+	1 User programs
+	2 application programs
+	3 Simple Program
+	4 System program
+Ans ) 2
+	
+5) What is a shell ? 
+	1 It is a hardware component 
+	2 It is a command interpreter 
+	3 It is a part in compiler 
+	4 It is a tool in CPU scheduling 
+Ans ) 2 
+
+
+6) A program at the time of executing is called ________. 
+	1 Dynamic program 
+	2 Static program 
+	3 Binded Program p 
+	4 A Process 
+Ans ) 4 
+
+7) If you don't know which version of MS-DOS you are working with, which command will you use 
+   after booting your operating system ? 
+	1 Format command 
+	2 FAT command 
+	3 VER command 
+	4 DISK command 
+Ans ) 3 
+
+8) Unix Operating System is an __________. 
+	1 Time Sharing Operating System 
+	2 Multi-User Operating System 
+	3 Multi-tasking Operating System 
+	4 All the Above 
+Ans ) 4 
+
+9) Which file system does DOS typically use ? 
+	1 FAT16 
+	2 FAT32 
+	3 NTFS 
+	4 WNFS 
+Ans ) 1 
+
+
+10) Which file system does Windows 95 typically use ? 
+	1 FAT16 
+	2 FAT32 
+	3 NTFS 
+	4 LMFS 
+Ans ) 2 
+
+11) Which of the following is not advantage of multiprogramming? 
+	1 Increased throughput 
+	2 Shorter response time 
+	3 Decreased operating system overhead 
+	4 Ability to assign priorities to jobs 
+Ans ) 3 
+
+12) In ______ OS, the response time is very critical. 
+	1 Multitasking 
+	2 Batch 
+	3 Online 
+	4 Real-time 
+Ans ) 4 
+
+13) Inter process communication can be done through __________. 
+	1 Mails 
+	2 Messages 
+	3 System calls 
+	4 Traps 
+Ans ) 2 
+
+14) Super computers typically employ _______. 
+	1 Real time Operating system 
+	2 Multiprocessors OS 
+	3 desktop OS 
+	4 None of the above 
+Ans ) 2 
+
+15) The process related to process control, file management, device management,information about 
+   system and communication that is requested by any higher level language can be performed by __________. 
+	1 Editors 
+	2 Compilers 
+	3 System Call 
+	4 Caching 
+Ans ) 3 
+
+16) Multiprogramming systems ________. 
+	1 Are easier to develop than single programming systems 
+	2 Execute each job faster 
+	3 Execute more jobs in the same time 
+	4 Are used only on large main frame computers 
+Ans ) 3 
+
+17) Which of the following file name extension suggests that the file is Backup copy of another file ? 
+	1 TXT 
+	2 COM 
+	3 BAS 
+	4 BAK 
+Ans ) 4 
+
+
+18) Which technique was introduced because a single job could not keep both the CPU and 
+    the I/O devices busy? 
+	1 Time-sharing 
+	2 SPOOLing 
+	3 Preemptive scheduling 
+	4 Multiprogramming 
+Ans ) 4 
+
+19) Which directory implementation is used in most Operating System? 
+	1 Single level directory structure 
+	2 Two level directory structure 
+	3 Tree directory structure 
+	4 Acyclic directory structure 
+Ans ) 3 
+
+20) A tree sturctured file directory system 
+	1 allows easy storage and retrieval of file names 
+	2 is a much debated unecessary feature 
+	3 is not essential when we have millions of files 
+	4 none of the above 
+Ans ) 1 
+
+
+
