@@ -23,32 +23,39 @@ public class ShapeAspects {
 	// System.out.println("Advice 2");
 	// }
 
-//	@After("execution(* calculateArea())")
-//	public void advice3() {
-//		System.out.println("Advice 3");
-//	}
-	
-	
-	 @After("within (com.bookstore.demos.aspect_oriented_programming.model.Rectangle)||execution(* calculateArea())")
-	 public void advice4() {
-	 System.out.println("Advice 4");
-	 }
-	
-	
-	 
-	 
-	 
-	 // @Pointcut("execution (* get*(*)) || execution (* set*(*))")
-	// public void gettersSettersAdvice() {
+	// @After("execution(* calculateArea())")
+	// public void advice3() {
+	// System.out.println("Advice 3");
 	// }
-	//
-	// @Pointcut("within(com.demo.aspect_oriented_programming.model.Rectangle)")
-	// public void pointcut2() {
-	// }
-	//
-	// @Before("gettersSettersAdvice() || pointcut2()")
-	// public void advice5() {
-	// System.out.println("Advice 5");
-	// }
+
+	@After("within (com.bookstore.demos.aspect_oriented_programming.model.Rectangle)||execution(* calculateArea())")
+	public void advice4() {
+		System.out.println("Advice 4");
+	}
+
+	@Pointcut("execution (* get*(*)) || execution (* set*(*))")
+	public void gettersSettersAdvice() {
+	}
+
+	@Pointcut("within(com.demo.aspect_oriented_programming.model.Rectangle)")
+	public void pointcut2() {
+	}
+
+	@Before("gettersSettersAdvice() || pointcut2()")
+	public void advice5() {
+		System.out.println("Advice 5");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
