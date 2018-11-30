@@ -1,16 +1,31 @@
 package com.bookstore.demos.profiles_jdbctemplating.model;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component("student")
+@Component
+@Scope("prototype")
 public class Student {
 
 	private int rno;
+
+	@NotBlank(message = "Name field should not be null")
 	private String name;
+
+	@NotNull(message = "Marks field should not be null")
 	private int marks;
 
 	public Student() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public Student(String name2, int marks2) {
+		this.marks = marks2;
+		this.name = name2;
 	}
 
 	public int getRno() {

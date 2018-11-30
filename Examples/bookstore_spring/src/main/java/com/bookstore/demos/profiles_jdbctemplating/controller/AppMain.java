@@ -1,6 +1,10 @@
 package com.bookstore.demos.profiles_jdbctemplating.controller;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.bookstore.demos.profiles_jdbctemplating.model.Student;
 
 public class AppMain {
 
@@ -17,7 +21,11 @@ public class AppMain {
 
 		StudentController sc = (StudentController) context.getBean("studentcontroller");
 
-		sc.insertStudent("Janet", 70);
+		List<Student> list = sc.getStudents();
+
+		for (Student s : list) {
+			System.out.println(s);
+		}
 
 		System.out.println("closing context");
 		context.close();

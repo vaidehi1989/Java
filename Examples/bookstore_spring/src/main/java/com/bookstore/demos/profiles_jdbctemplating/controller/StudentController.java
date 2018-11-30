@@ -1,5 +1,7 @@
 package com.bookstore.demos.profiles_jdbctemplating.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,6 +22,10 @@ public class StudentController {
 		student.setMarks(marks);
 		service.insertStudent(student);
 		return true;
+	}
+
+	public List<Student> getStudents() {
+		return service.getAllStudents();
 	}
 
 }

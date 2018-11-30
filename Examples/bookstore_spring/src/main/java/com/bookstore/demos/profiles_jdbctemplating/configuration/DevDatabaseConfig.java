@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Profile("Development")
-@Configuration
+//@Configuration
 public class DevDatabaseConfig implements DatabaseConfig {
 
 	@Autowired

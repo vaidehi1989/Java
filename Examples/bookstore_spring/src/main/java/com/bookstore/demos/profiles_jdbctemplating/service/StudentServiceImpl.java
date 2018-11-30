@@ -20,8 +20,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	public List<Student> getAllStudents() {
-		// TODO Auto-generated method stub
-		return null;
+		return studentDAO.getAllStudents();
 	}
 
 	public boolean insertStudent(Student student) {
