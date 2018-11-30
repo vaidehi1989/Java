@@ -12,12 +12,12 @@ public class AppMain {
 		// Sets the active profiles
 		context.getEnvironment().setActiveProfiles("Production");
 
-		context.scan("com.demo.profiles_jdbctemplating");
+		context.scan("com.bookstore.demos.profiles_jdbctemplating");
 		context.refresh();
 
-		StudentController sc = context.getBean(StudentController.class);
+		StudentController sc = (StudentController) context.getBean("studentcontroller");
 
-		sc.insertStudent("Ankit", 50);
+		sc.insertStudent("Janet", 70);
 
 		System.out.println("closing context");
 		context.close();

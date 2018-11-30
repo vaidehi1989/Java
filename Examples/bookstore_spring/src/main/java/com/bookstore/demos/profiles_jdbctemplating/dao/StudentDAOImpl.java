@@ -28,6 +28,7 @@ public class StudentDAOImpl implements StudentDAO {
 		String query = "insert into student (name,marks) values( '" + student.getName() + "'," + student.getMarks()
 				+ ")";
 		jdbcTemplate.update(query);
+		
 		return true;
 	}
 

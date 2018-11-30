@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import com.bookstore.demos.profiles_jdbctemplating.model.Student;
 import com.bookstore.demos.profiles_jdbctemplating.service.StudentService;
 
-@Component
+@Component("studentcontroller")
 public class StudentController {
 
 	@Autowired
