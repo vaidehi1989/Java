@@ -1,5 +1,11 @@
-package com.bookstore.demos.profiles_jdbctemplating.model;
+package com.bookstore.springmvc.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -9,13 +15,19 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("prototype")
+@Entity
+@Table(name = "student")
 public class Student {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int rno;
 
+	@Column
 	@NotBlank(message = "Name field should not be null")
 	private String name;
 
+	@Column
 	@NotNull(message = "Marks field should not be null")
 	private int marks;
 

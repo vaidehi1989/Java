@@ -1,8 +1,8 @@
-package com.bookstore.demos.profiles_jdbctemplating.dao;
+package com.bookstore.springmvc.dao;
 
 import java.util.List;
 
-import com.bookstore.demos.profiles_jdbctemplating.model.Student;
+import com.bookstore.springmvc.model.Student;
 
 public interface StudentDAO {
 

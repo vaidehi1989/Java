@@ -1,4 +1,4 @@
-package com.bookstore.springmvc.Configuration;
+package com.bookstore.springmvc.configuration;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -11,7 +11,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 public class AppInitializer implements WebApplicationInitializer {
 
 	public void onStartup(ServletContext container) throws ServletException {
-		System.out.println("Initializing");
 		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 		ctx.register(AppConfig.class);
 		ctx.setServletContext(container);

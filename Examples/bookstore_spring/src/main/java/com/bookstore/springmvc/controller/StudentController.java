@@ -1,4 +1,4 @@
-package com.bookstore.demos.profiles_jdbctemplating;
+package com.bookstore.springmvc.controller;
 
 import java.util.List;
 
@@ -7,22 +7,23 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.bookstore.demos.profiles_jdbctemplating.model.Student;
-import com.bookstore.demos.profiles_jdbctemplating.service.StudentService;
+import com.bookstore.springmvc.model.Student;
+import com.bookstore.springmvc.service.StudentService;
 
 @Controller
 @RequestMapping("/")
 public class StudentController {
+
 	@Autowired
 	StudentService service;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
+		System.out.println("Controller called");
 		return "index";
 	}
 

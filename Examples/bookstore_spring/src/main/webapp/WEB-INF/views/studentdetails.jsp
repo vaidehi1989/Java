@@ -1,5 +1,3 @@
-<%@page
-	import="com.bookstore.demos.profiles_jdbctemplating.model.Student"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
