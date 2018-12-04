@@ -27,36 +27,37 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
+	@Transactional
 	public boolean updateStudent(Student student) {
-		// TODO Auto-generated method stub
-		return false;
+
+		return studentDAO.updateStudent(student);
 	}
 
 	@Override
 	@Transactional
-	public Student findStudentById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Student findStudentById(int id) {
+		return studentDAO.getStudent(id);
 	}
 
 	@Override
 	@Transactional
 	public boolean isStudentExist(Student student) {
-		// TODO Auto-generated method stub
-		return false;
+
+		if (studentDAO.getStudent(student.getRno()) == null) {
+			return false;
+		}
+		return true;
 	}
 
 	@Override
 	@Transactional
-	public void deleteStudentById(long id) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	@Transactional
-	public void deleteAllStudents() {
-		// TODO Auto-generated method stub
+	public boolean deleteStudentById(int id) {
+		Student student = studentDAO.getStudent(id);
+		if (student == null) {
+			return false;
+		}
+		studentDAO.deleteStudent(student);
+		return true;
 
 	}
 

@@ -15,8 +15,8 @@ import com.bookstore.springmvc.model.Student;
 public class StudentDAOImpl extends AbstractDao implements StudentDAO {
 
 	public Student getStudent(int rno) {
-		// TODO Auto-generated method stub
-		return null;
+		Student student = getSession().get(Student.class, rno);
+		return student;
 	}
 
 	public List<Student> getAllStudents() {
@@ -28,22 +28,19 @@ public class StudentDAOImpl extends AbstractDao implements StudentDAO {
 
 	public boolean insertStudent(Student student) {
 
-		Session session = getSession();
-		session.beginTransaction();
-		session.save(student);
-		session.getTransaction().commit();
-
+		getSession().save(student);
 		return true;
 	}
 
 	public boolean updateStudent(Student student) {
-		// TODO Auto-generated method stub
-		return false;
+		getSession().update(student);
+		System.out.println("IN DAO" + getStudent(student.getRno()));
+		return true;
 	}
 
 	public boolean deleteStudent(Student student) {
-		// TODO Auto-generated method stub
-		return false;
+		getSession().delete(student);
+		return true;
 	}
 
 }

@@ -12,12 +12,11 @@ public interface StudentService {
 
 	public boolean updateStudent(Student student);
 
-	public Student findStudentById(long id);
+	public Student findStudentById(int id);
 
 	public boolean isStudentExist(Student student);
 
-	public void deleteStudentById(long id);
+	public boolean deleteStudentById(int id);
 
-	public void deleteAllStudents();
 
 }

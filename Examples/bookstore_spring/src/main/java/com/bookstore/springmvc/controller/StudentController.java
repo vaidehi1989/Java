@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.bookstore.springmvc.model.Student;
@@ -48,14 +49,22 @@ public class StudentController {
 		return mv;
 	}
 
+	@ResponseBody
 	@RequestMapping(value = "/studentdetails", method = RequestMethod.GET)
-	public ModelAndView getAllStudents() {
+	public List<Student> getAllStudents() {
 		List<Student> studentsList = service.getAllStudents();
 
-		ModelAndView mv = new ModelAndView("studentdetails");
-		mv.addObject("studentList", studentsList);
-
-		return mv;
+		return studentsList;
 	}
+
+	// @RequestMapping(value = "/studentdetails", method = RequestMethod.GET)
+	// public ModelAndView getAllStudents() {
+	// List<Student> studentsList = service.getAllStudents();
+	//
+	// ModelAndView mv = new ModelAndView("studentdetails");
+	// mv.addObject("studentList", studentsList);
+	//
+	// return mv;
+	// }
 
 }
